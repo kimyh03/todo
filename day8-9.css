@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f8c0c7;
+  color: #ee9ca7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.note {
+  width: 400px;
+  height: 700px;
+  background-color: white;
+  padding: 50px 15px;
+  margin-top: 50px;
+  border-radius: 50px;
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
+    30px 30px 40px rgba(118, 146, 180, 0.18);
+}
+ul {
+  list-style: none;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form h1 {
+  font-size: 22px;
+}
+input {
+  margin-top: 50px;
+  width: 80%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: #ee9ca7 3px solid;
+  animation: float 3s linear infinite forwards;
+  outline: none;
+  text-align: center;
+  opacity: 0.6;
+}
+button {
+  background-color: white;
+  border: none;
+  color: #ee9ca7;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.container h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.pending {
+  margin-right: 10px;
+}
+
+.pending,
+.finished {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+button {
+  padding: 0;
+  margin: 1px;
+}
+li span {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+li {
+  animation: input 0.4s ease-in forwards;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@keyframes input {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
